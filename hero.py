@@ -1,1 +1,3 @@
-print("heil hitler")
+class Superhero:
+
+    people = "people"
