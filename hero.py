@@ -14,7 +14,7 @@ class Superhero:
         print(self.name)
 
     def nhealth_points(self):
-        return int(self.health_points) * 2
+        return self.health_points * 2
 
     def __str__(self):
          return f"{self.nickname} {self.superpower} {self.health_points}"
@@ -22,7 +22,7 @@ class Superhero:
     def __len__(self):
         return len(self.catchphrase)
 
-Hero = Superhero('Tony Stark', 'Iron man','rich','100','I am Iron man')
+Hero = Superhero('Tony Stark', 'Iron man','rich',100,'I am Iron man')
 
 Hero.sayname()
 print(Hero)
