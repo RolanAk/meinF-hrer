@@ -28,6 +28,7 @@ Hero.sayname()
 print(Hero)
 print(Hero.nhealth_points())
 print(len(Hero.catchphrase))
+print('\n')
 
 class Superhero1(Superhero):
     people = 'people'
@@ -75,6 +76,7 @@ nHero2 = Superhero2('Bruce banner', 'hulk',
 
 print(nHero2.nhealth_points())
 nHero2.phrase()
+print('\n')
 
 
 
@@ -90,14 +92,14 @@ class villain(Superhero1):
     def gen_x(self):
         ...
 
-    def crit(self):
+    def crit1(self):
         return self.damage ** 2
 
-    def usecrit(self):
-        return self.damage - self.crit
+    def __str__(self):
+        return f"{Superhero1.__str__(self)} crit: {self.damage}"
 
 
 villain1 = villain('Johann Shmidt', 'red skull', 'warp',
                    100, 'Cut off one head, two more shall take its place', 100,100)
 
-print(villain1.usecrit())
+
